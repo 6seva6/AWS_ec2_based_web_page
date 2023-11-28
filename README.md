@@ -1,5 +1,5 @@
 # AWS_ec2_based_web_page
-## This project 
+### This project 
 
 For my project I'll be use folowing steck of technology:
 -AWS ec2 with ubuntu operating system
