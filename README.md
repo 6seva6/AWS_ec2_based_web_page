@@ -64,4 +64,4 @@ Once launched, you can connect to your EC2 instance using SSH (for Linux instanc
   - Once associated, you should see the Elastic IP listed in the Elastic IPs dashboard with the status "associated."
 
 * Connecting to our AWS ec2 machine
-    - Easyest way to use windowd PowerShell and next command ssh -i D:\..\..\your_key_name.pem ubuntu@Elastic_ip which we createt below
+    - Easyest way to use windowd PowerShell and next command ssh -i D:\use_your_path_to_the_key\your_keyname.pem ubuntu@Elastic_ip which we created above.
