@@ -13,7 +13,7 @@
 # AWS ec2 launching
 
 * Sign in to AWS Console:
-> Log in to your AWS account at https://aws.amazon.com/.
+  - Log in to your AWS account at https://aws.amazon.com/.
 
 * Navigate to EC2:
 In the AWS Management Console, go to the "Services" dropdown and select "EC2" under the "Compute" section.
