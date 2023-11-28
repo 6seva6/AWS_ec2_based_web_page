@@ -10,4 +10,4 @@
 * www.cloudflare.com for encrypting my web traffic, preventing data theft and other tampering.
 * And of course HTML & CSS files, for web page itself. That I found in internet and customized to myself.
 * 
-# 1 ec2 launching
+# AWS ec2 launching
