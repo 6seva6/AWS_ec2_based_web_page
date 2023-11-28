@@ -66,4 +66,7 @@ Once launched, you can connect to your EC2 instance using SSH (for Linux instanc
 * Connecting to our AWS ec2 machine
     - Easyest way to use windowd PowerShell and next command ssh -i D:\use_your_path_to_the_key\your_keyname.pem ubuntu@Elastic_ip which we created above.
 
-  # Docker instalation and downloading NGNIX image from docker hub.
+# Docker instalation and downloading NGNIX image from docker hub.
+
+* Docker instalation
+    - Use this [link](https://docs.docker.com/engine/install/ubuntu/) with instruction from official web site.
