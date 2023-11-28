@@ -77,15 +77,15 @@ Once launched, you can connect to your EC2 instance using SSH (for Linux instanc
 By adding current user to the docker group we prevent typing sudo every time during execution docker commands.
 
 # NGNIX image and setting up
-  - Checking if nginx image exist
+- Checking if nginx image exist
 ```bash
 docker search nginx
 ```
-  - Downloading image
+- Downloading image
 ```bash
 docker pull nginx
 ```
-  - Run image
+- Run image
 ```bash
 docker run -d -p 8080:80 nginx
 ```
