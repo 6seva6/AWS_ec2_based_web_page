@@ -74,7 +74,6 @@ Once launched, you can connect to your EC2 instance using SSH (for Linux instanc
       ```bash
       sudo usermod -aG docker $USER
       ```
-
-usermod -aG docker $USER by adding current user to the docker group we prevent typing sudo every time during execution docker commands.
+By adding current user to the docker group we prevent typing sudo every time during execution docker commands.
    
 
