@@ -71,3 +71,10 @@ Once launched, you can connect to your EC2 instance using SSH (for Linux instanc
 * Docker instalation
     - Use this [link](https://docs.docker.com/engine/install/ubuntu/) with instruction from official web site.
     - Type this command sudo usermod -aG docker $USER by adding current user to the docker group we prevent typing sudo every time during execution docker commands.
+    - ```diff
+- text in red
++ text in green
+! text in orange
+# text in gray
+@@ text in purple (and bold)@@
+```
