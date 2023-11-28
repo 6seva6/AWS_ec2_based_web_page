@@ -1,5 +1,5 @@
 # AWS_ec2_based_web_page
-### This project is a detailed instruction of how you can a host your personal web site for cheapest price in 2023-2024.
+### This project is a detailed instruction of how you can host your personal web site for cheapest price in 2023-2024.
 
 # For my project I'll be use folowing steck of technology:
 * AWS ec2 with ubuntu operating system
