@@ -16,27 +16,27 @@
   - Log in to your AWS account at https://aws.amazon.com/.
 
 * Navigate to EC2:
-In the AWS Management Console, go to the "Services" dropdown and select "EC2" under the "Compute" section.
+  - In the AWS Management Console, go to the "Services" dropdown and select "EC2" under the "Compute" section.
 
 * Launch Instance:
-Click on the "Instances" link in the EC2 Dashboard and then click the "Launch Instance" button.
+  - Click on the "Instances" link in the EC2 Dashboard and then click the "Launch Instance" button.
 
 * Choose an Amazon Machine Image (AMI):
-Select an AMI that suits your needs, Ubuntu in our case.
+  - Select an AMI that suits your needs, Ubuntu in our case.
 
 * Choose an Instance Type:
-Choose the type of instance you want to launch. We can use any free tier eligible (t3.micro) or to purchase the cheapest configuration which will cost around 6$ per month.
+  - Choose the type of instance you want to launch. We can use any free tier eligible (t3.micro) or to purchase the cheapest configuration which will cost around 6$ per month.
 
 * Create Key Pair:
-Press create new pair key. Type name of key. Select RSA key type and .pem format for future SSH connection.
+  - Press create new pair key. Type name of key. Select RSA key type and .pem format for future SSH connection.
 
 * Network settings:
-Select 'Create new security group' and all chek box below: allow ssh,https,http traffic.
+  - Select 'Create new security group' and all chek box below: allow ssh,https,http traffic.
 
 * Add Storage:
-You can add free space, but for our purposes it's not necessarily.
+  - You can add free space, but for our purposes it's not necessarily.
 
 * Launch Instance:
-Click "Launch Instances" to start your EC2 instance.
+  - Click "Launch Instances" to start your EC2 instance.
 
 Once launched, you can connect to your EC2 instance using SSH (for Linux instances) or Remote Desktop (for Windows instances), depending on your chosen operating system.
