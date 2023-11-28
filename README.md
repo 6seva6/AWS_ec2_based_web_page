@@ -1,5 +1,7 @@
 # AWS_ec2_based_web_page
 
+*  edgfsdgdgsd
+
 For my project I'll be use folowing steck of technology:
 -AWS ec2 with ubuntu operating system
 -ElasticIPs - statick ip which won't be changed after enstanse reboot
