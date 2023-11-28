@@ -40,3 +40,25 @@
   - Click "Launch Instances" to start your EC2 instance.
 
 Once launched, you can connect to your EC2 instance using SSH (for Linux instances) or Remote Desktop (for Windows instances), depending on your chosen operating system.
+
+# ElasticIPs
+
+* Navigate to EC2:
+  - In the AWS Management Console, go to the "Services" dropdown and select "EC2" under the "Compute" section.
+   
+* Allocate an Elastic IP:
+   - In the EC2 Dashboard, click on "Elastic IPs" in the left navigation pane.
+   - Click the "Allocate Elastic IP address" button.
+
+* Allocate the Elastic IP:
+    - Choose "Amazon's pool of IPv4 addresses" for the Allocation ID.
+    - Click "Allocate."
+
+* Associate Elastic IP with EC2 Instance:
+  - In the Elastic IPs dashboard, select the newly created Elastic IP.
+  - Click "Actions" and choose "Associate Elastic IP address."
+  - In the dialog box, select the instance you want to associate the Elastic IP with.
+  - Click "Associate."
+
+* Confirm Association:
+  - Once associated, you should see the Elastic IP listed in the Elastic IPs dashboard with the status "associated."
