@@ -9,5 +9,40 @@
 * www.namecheap.com for domain registration
 * www.cloudflare.com for encrypting my web traffic, preventing data theft and other tampering.
 * And of course HTML & CSS files, for web page itself. That I found in internet and customized to myself.
-* 
+  
 # AWS ec2 launching
+
+* Sign in to AWS Console:
+Log in to your AWS account at https://aws.amazon.com/.
+
+* Navigate to EC2:
+In the AWS Management Console, go to the "Services" dropdown and select "EC2" under the "Compute" section.
+
+* Launch Instance:
+Click on the "Instances" link in the EC2 Dashboard and then click the "Launch Instance" button.
+
+* Choose an Amazon Machine Image (AMI):
+Select an AMI that suits your needs, Ubuntu in our case.
+
+* Choose an Instance Type:
+Choose the type of instance you want to launch. We can use any free tier eligible (t3.micro) or to purchase the cheapest configuration which will cost around 6$ per month.
+
+* Create Key Pair:
+Press create new pair key. Type name of key. Select RSA key type and .pem format for future SSH connection.
+
+Add Storage:
+Configure the storage settings for your instance, such as the size and type of the root volume.
+
+Add Tags (Optional):
+You can add tags to your instance for better organization.
+
+Configure Security Group:
+Set up security groups to control inbound and outbound traffic to your instance.
+
+Review and Launch:
+Review your configurations and click the "Launch" button.
+
+Launch Instance:
+Click "Launch Instances" to start your EC2 instance.
+
+Once launched, you can connect to your EC2 instance using SSH (for Linux instances) or Remote Desktop (for Windows instances), depending on your chosen operating system.
