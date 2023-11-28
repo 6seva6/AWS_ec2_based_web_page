@@ -81,5 +81,9 @@ By adding current user to the docker group we prevent typing sudo every time dur
 ```bash
 docker search nginx
 ```
+  - Downloading image
+```bash
+docker pull nginx
+```
    
 
