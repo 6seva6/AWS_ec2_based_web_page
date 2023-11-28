@@ -30,19 +30,13 @@ Choose the type of instance you want to launch. We can use any free tier eligibl
 * Create Key Pair:
 Press create new pair key. Type name of key. Select RSA key type and .pem format for future SSH connection.
 
-Add Storage:
-Configure the storage settings for your instance, such as the size and type of the root volume.
+* Network settings:
+Select 'Create new security group' and all chek box below: allow ssh,https,http traffic.
 
-Add Tags (Optional):
-You can add tags to your instance for better organization.
+* Add Storage:
+You can add free space, but for our purposes it's not necessarily.
 
-Configure Security Group:
-Set up security groups to control inbound and outbound traffic to your instance.
-
-Review and Launch:
-Review your configurations and click the "Launch" button.
-
-Launch Instance:
+* Launch Instance:
 Click "Launch Instances" to start your EC2 instance.
 
 Once launched, you can connect to your EC2 instance using SSH (for Linux instances) or Remote Desktop (for Windows instances), depending on your chosen operating system.
