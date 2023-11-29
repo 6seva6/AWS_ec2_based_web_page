@@ -90,7 +90,7 @@ docker pull nginx
 docker run -d --restart unless-stopped -p 8080:80 nginx
 ```
   - `-d` option specifies that the container runs in detached mode: the container continues to run until stopped but does not respond to commands run on the command line.
-  - `-` restart option settings for container restart `unless-stopped` always restart the container if it stops, except that when the container is stopped (manually or otherwise), it is not restarted even after Docker daemon restarts
+  - `--restart` option settings for container restart `unless-stopped` always restart the container if it stops, except that when the container is stopped (manually or otherwise), it is not restarted even after Docker daemon restarts
   - `-p` option tells Docker to map the ports exposed in the container by the NGINX image (port 80) to the specified port on the Docker host. The first parameter specifies the port in the Docker host, the second parameter is mapped to the port exposed in the container
 > [!important]
 > Don't forget to add port 8080 or that what you invented in inbound list of rules in AWS security group.
