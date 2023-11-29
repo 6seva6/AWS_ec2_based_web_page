@@ -87,11 +87,12 @@ docker pull nginx
 ```
 - Run image
 ```bash
-docker run -d --restart unless-stopped -p 8080:80 nginx
+docker run -p 8080:80 -d --restart unless-stopped -v ~/[CONTENT LOCAL PATH]:/usr/share/nginx/html nginx
 ```
   - `-d` option specifies that the container runs in detached mode: the container continues to run until stopped but does not respond to commands run on the command line.
   - `--restart` option settings for container restart `unless-stopped` always restart the container if it stops, except that when the container is stopped (manually or otherwise), it is not restarted even after Docker daemon restarts
-  - `-p` option tells Docker to map the ports exposed in the container by the NGINX image (port 80) to the specified port on the Docker host. The first parameter specifies the port in the Docker host, the second parameter is mapped to the port exposed in the container
+  - `-p` option tells Docker to map the ports exposed in the container by the NGINX image (port 80) to the specified port on the Docker host.
+  - `-v` by using Docker’s data volumes feature, you can create a symbolic link between your server’s filesystem and the container’s filesystem. This allows you to edit your existing web page files and add new ones into the directory.
 > [!important]
 > Don't forget to add port 8080 or that what you invented in inbound list of rules in AWS security group.
 
