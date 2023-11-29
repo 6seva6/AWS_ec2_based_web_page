@@ -96,19 +96,3 @@ docker run -p 8080:80 -d --restart unless-stopped -v ~/[CONTENT LOCAL PATH]:/usr
 > [!important]
 > Don't forget to add port 8080 or that what you invented in inbound list of rules in AWS security group.
 
-## Seting up nginx.conf and adding our web site contetnt
-  - Copying content from you machine into container
-```bash
-cp PATH_to_your_content CONTAINER_ID:/var/www/
-```
-
-  - We need to enter into the container, for this purpose execute below command
-```bash
-docker ps
-```
-  Copy the `CONTAINER ID`
-```bash
-docker exec -it  CONTAINER ID /bin/bash
-```
-
-
