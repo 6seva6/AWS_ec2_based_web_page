@@ -98,7 +98,7 @@ docker run -d --restart unless-stopped -p 8080:80 nginx
 ## Seting up nginx.conf and adding our web site contetnt
   - Copying content from you machine into container
 ```bash
-cp PATH_to_your_cintent `CONTAINER ID`:/var/www/
+cp PATH_to_your_content CONTAINER_ID:/var/www/
 ```
 
   - We need to enter into the container, for this purpose execute below command
