@@ -77,6 +77,42 @@ Once launched, you can connect to your EC2 instance using SSH (for Linux instanc
 By adding current user to the docker group we prevent typing sudo every time during execution docker commands.
 
 # NGNIX image and setting up
+- Creating default.conf file for nginx setting up
+```bash
+server {
+    listen       80;
+    listen  [::]:80;
+    server_name  www.vsevolodachev.pro;
+
+    #access_log  /var/log/nginx/host.access.log  main;
+
+    location / {
+        root   /usr/share/nginx/html;
+        index  index.html index.htm;
+    }
+server {
+    listen 443 ssl;
+    listen [::]:443 ssl http2;
+    server_name www.vsevolodachev.pro;
+    ssl_certificate /etc/nginx/certificate.crt;
+    ssl_certificate_key /etc/nginx/certificate.key;
+}
+    #error_page  404              /404.html;
+
+    # redirect server error pages to the static page /50x.html
+    #
+    error_page   500 502 503 504  /50x.html;
+    location = /50x.html {
+        root   /usr/share/nginx/html;
+    }
+}
+```
+- Creatinng docker file to built an nginx image and replacing default configuration file with created above.
+```bash
+FROM nginx:latest
+RUN rm /etc/nginx/conf.d/default.conf
+COPY /home/ubuntu/AWS_ec2_based_web_page/nginx_conf/nginx.conf /etc/nginx/conf.d
+```
 - Checking if nginx image exist
 ```bash
 docker search nginx
