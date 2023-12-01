@@ -107,22 +107,18 @@ server {
     }
 }
 ```
-- Creatinng docker file to built an nginx image and replacing default configuration file with created above.
+- Creating dockerfile to build an nginx image and replacing default configuration file with created above.
 ```bash
 FROM nginx:latest
 RUN rm /etc/nginx/conf.d/default.conf
-COPY /home/ubuntu/AWS_ec2_based_web_page/nginx_conf/nginx.conf /etc/nginx/conf.d
+COPY nginx_conf/nginx.conf /etc/nginx/conf.d
 ```
-- Checking if nginx image exist
+> [!importnant]
+> All files that you planing to built in image must be located in the same directory where located Dockerfile `defailt naming`
+- Build the Docker image by running the following command in the directory where our Dockerfile is located
 ```bash
-docker search nginx
+docker build -t my-nginx-image
 ```
-- Downloading image
-```bash
-docker pull nginx
-```
-- Run image
-```bash
 docker run -p 8080:80 -d --restart unless-stopped -v ~/[CONTENT LOCAL PATH]:/usr/share/nginx/html nginx
 ```
   - `-d` option specifies that the container runs in detached mode: the container continues to run until stopped but does not respond to commands run on the command line.
