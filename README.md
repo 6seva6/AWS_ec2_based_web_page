@@ -113,7 +113,7 @@ FROM nginx:latest
 RUN rm /etc/nginx/conf.d/default.conf
 COPY nginx_conf/nginx.conf /etc/nginx/conf.d
 ```
-> [!IMPORTNATN]
+> [!IMPORTANT]
 > All files that you planing to built in image must be located in the same directory where located Dockerfile `defailt naming`
 - Build the Docker image by running the following command in the directory where our Dockerfile is located
 ```bash
